@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-image: url("./images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+    width: 35%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(99, 48, 188, 0.523);
+    padding: 3% 2%;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 28px;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="text"], input[type="email"], input[type="number"], select {
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    height: 30px;
+    color:rgb(128, 25, 196);
+    font-weight: 600;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formato {
+    color: rgb(62, 62, 62);
+    font-weight: 600;
+    
+}
+
+.sexo-formato, .medicamento-formato {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sexo, .medicamento, .padecimientos {
+    background-color: white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    height: 30px;
+    width: 48%;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.horas {
+    margin: 10px 0;
+}
+
+button {
+    width: 30%;
+    margin: 0 auto;
+    border: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    height: 25px;
+    background-color: rgb(68, 0, 91);
+    color: white;
+    font-size: 20px;
 }
