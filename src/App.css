@@ -12,12 +12,12 @@ body {
 }
 
 form {
-    width: 35%;
+    width: 75%;
     margin: 5% auto;
     display: flex;
     flex-direction: column;
     background-color: rgba(99, 48, 188, 0.523);
-    padding: 3% 2%;
+    padding: 3% 8%;
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
