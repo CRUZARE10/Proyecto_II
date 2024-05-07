@@ -1,0 +1,13 @@
+img {
+    text-align: center;
+    margin: 2% auto;
+    width: 80%;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+    justify-content: center;
+    margin-top: 10px;
+}

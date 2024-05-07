@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
+import {Nav} from './nav';
+//Esto es lo que agrera para el direccionamiento
+import {useNavigate} from 'react-router-dom';
+
+
 
 //Creacion del componente para el fomulario
-function Formulario() {
+export function Formulario() {
   //estados para el guardado de las entradas de usuario
+  const navigate = useNavigate();  //esto se esta aumentando
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const [edad, setEdad] = useState('');
@@ -40,10 +46,16 @@ function Formulario() {
     console.log('Medicamento:', medicamento);
     console.log('Selección:', seleccion);
     console.log('Checkboxes:', checkboxes);
+    //aumentando esto
+    navigate('/Slider');
   };
-
+  
+  
   return (
-    
+    <div>
+      <nav>
+        <Nav />
+      </nav>
     <form onSubmit={handleSubmit}>
       <p>Completa el siguiente formulario</p>
 
@@ -145,7 +157,6 @@ function Formulario() {
 
       <button type="submit">Enviar</button>
     </form>
+    </div>
   );
 }
-
-export default Formulario;
