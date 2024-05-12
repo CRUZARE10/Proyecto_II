@@ -1,0 +1,52 @@
+.producto {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.producto-imagen {
+    width: 100px; /* Ancho deseado */
+    height: auto; /* Altura ajustada automáticamente */
+    margin-right: 20px;
+}
+
+.producto-info {
+    flex: 1;
+}
+
+.producto-nombre {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.producto-cost {
+    font-size: 18px;
+    color: #007bff; 
+    margin-bottom: 10px;
+}
+
+.producto-descripcion {
+    margin-bottom: 10px;
+}
+
+.producto-caracteristicas {
+    margin-top: 20px;
+}
+
+.producto-seccion-titulo {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.producto-ingredientes,
+.producto-presentacion,
+.producto-uso,
+.producto-precauciones {
+    margin-bottom: 10px;
+}
+
+.producto-beneficios {
+    padding-left: 20px;
+}
