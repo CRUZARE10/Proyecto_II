@@ -1,0 +1,77 @@
+
+
+article {
+    display: grid;
+    grid-template-areas:     'name price price price'    'image bene bene bene'    'image ingre ingre ingre'    'calif reco reco reco';
+    gap: 10px;
+    padding: 10px;
+    width: 50%;
+    margin: 1% auto;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.239);
+}
+
+article h3 {
+    grid-area: name;
+    text-align: center;
+    color: rgb(68, 0, 99);
+}
+article h4 {
+    grid-area: price;
+    text-align: center;
+    color: rgb(68, 0, 99);
+}
+
+article img {
+    grid-area: image;
+}
+
+.Bene {
+    grid-area: bene;
+    border: 2px solid rgb(173, 0, 253);
+    border-radius: 15px;
+    font-size: 22px;
+    color: rgb(60, 1, 83);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: rgba(168, 70, 240, 0.822);
+}
+.Bene li, .Ingre li {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+.Ingre {
+    grid-area: ingre;
+    border: 2px solid rgb(173, 0, 253);
+    border-radius: 15px;
+    font-size: 22px;
+    color: rgb(60, 1, 83);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: rgba(168, 70, 240, 0.822);
+}
+
+.Calif {
+    grid-area: calif;
+    background-color: rgba(168, 61, 255, 0.469);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.Reco {
+    grid-area: reco;
+    background-color: rgba(168, 70, 240, 0.822);
+    font-size: 12px;
+}

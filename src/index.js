@@ -8,6 +8,9 @@ import Productos from './componentes/paginas/Productos';
 import { Testimonios } from './componentes/paginas/Testimonios';
 import { Formulario } from './componentes/Formulario';
 import { Slider } from './componentes/Slider';
+import { T_0001 } from './componentes/T_0001';
+import { T_0002 } from './componentes/T_0002';
+import { T_0003 } from './componentes/T_0003';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +41,21 @@ const router = createBrowserRouter([
   {
     path: "/Slider",
     element: <Slider />,
+    errorElement: <p>Hay un error</p>,
+  },
+  {
+    path: "/T_0001",
+    element: <T_0001 />,
+    errorElement: <p>Hay un error</p>,
+  },
+  {
+    path: "/T_0002",
+    element: <T_0002 />,
+    errorElement: <p>Hay un error</p>,
+  },
+  {
+    path: "/T_0003",
+    element: <T_0003 />,
     errorElement: <p>Hay un error</p>,
   },
 ]);
