@@ -1,29 +1,20 @@
-.producto {
-    display: flex;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 20px;
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.producto-salud {
+    background-color: #ccbce8;
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.producto-imagen {
-    width: 100px; /* Ancho deseado */
-    height: auto; /* Altura ajustada automáticamente */
-    margin-right: 20px;
-}
-
-.producto-info {
-    flex: 1;
-}
-
-.producto-nombre {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.producto-cost {
-    font-size: 18px;
-    color: #007bff; 
+.producto-salud-imagen {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
     margin-bottom: 10px;
 }
 
