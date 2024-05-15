@@ -1,5 +1,6 @@
 import React from 'react';
 import '../estilos/Slider.css';
+import {Link} from 'react-router-dom';
 
 export const Slider = () => {
   return(
@@ -12,15 +13,21 @@ export const Slider = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img src="./imagesSlider/Picture1.png" alt="Tratamiento Opción 1"/>
-            <button>Comprar</button>
+            <Link to="/T_0001">
+              <button>Más información...</button>
+            </Link>
           </div>
           <div className="carousel-item">
             <img src="./imagesSlider/Picture2.png" alt="Tratamiento Opción 2"/>
-            <button>Comprar</button>
+            <Link to="/T_0002">
+              <button>Más información...</button>
+            </Link>
           </div>
           <div className="carousel-item">
             <img src="./imagesSlider/Picture3.png" alt="Tratamiento Opción 3"/>
-            <button>Comprar</button>
+            <Link to="/T_0003">
+              <button>Más información...</button>
+            </Link>
           </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
