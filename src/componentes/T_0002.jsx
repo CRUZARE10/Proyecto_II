@@ -1,8 +1,12 @@
 import React from 'react';
+import {Nav} from './nav';
 
 export const T_0002 = () => {
   return (
     <div>
+      <nav>
+        <Nav />
+      </nav>
       <article>
         <h3>Vital Balance</h3>
         <h4>$399.00</h4>

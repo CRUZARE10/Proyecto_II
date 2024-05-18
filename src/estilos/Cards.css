@@ -4,7 +4,7 @@ article {
     display: grid;
     grid-template-areas:     'name price price price'    'image bene bene bene'    'image ingre ingre ingre'    'calif reco reco reco';
     gap: 10px;
-    padding: 10px;
+    padding: 5px;
     width: 50%;
     margin: 1% auto;
     border-radius: 15px;

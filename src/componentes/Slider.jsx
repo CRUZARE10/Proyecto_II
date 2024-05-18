@@ -1,9 +1,14 @@
 import React from 'react';
 import '../estilos/Slider.css';
 import {Link} from 'react-router-dom';
+import {Nav} from './nav';
 
 export const Slider = () => {
   return(
+    <div>
+      <nav>
+        <Nav />
+      </nav>
       <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -39,5 +44,6 @@ export const Slider = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+    </div>
   )
 }

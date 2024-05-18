@@ -1,5 +1,6 @@
 import React from 'react';
 import './Productos.css';
+import {Nav} from '../nav';
 
 const Producto1 = ({ name, cost, description, ingredients, benefits, presentation, usage, precautions, image }) => {
     const benefitsList = benefits ? benefits.map((benefit, index) => (
@@ -45,10 +46,15 @@ const Productos = () => {
     ];
 
     return (
-        <div className="productos-container">
-            {productosData.map((producto, index) => (
-                <Producto1 key={index} {...producto} />
-            ))}
+        <div>
+            <nav>
+                <Nav />
+            </nav>
+            <div className="productos-container">
+                {productosData.map((producto, index) => (
+                    <Producto1 key={index} {...producto} />
+                ))}
+            </div>
         </div>
     );
 };

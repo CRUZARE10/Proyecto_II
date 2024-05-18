@@ -1,9 +1,13 @@
 import React from 'react';
 import '../estilos/Cards.css';
+import {Nav} from './nav';
 
 export const T_0001 = () => {
   return (
     <div>
+      <nav>
+        <Nav />
+      </nav>
       <article>
         <h3>Vita relax</h3>
         <h4>$399.00</h4>
