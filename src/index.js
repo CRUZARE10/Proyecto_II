@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './estilos/formulario.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Inicio } from './componentes/paginas/Inicio';
+import { Menu } from './componentes/paginas/Menu';
 import { Nosotros } from './componentes/paginas/Nosotros';
 import Productos from './componentes/paginas/Productos'; 
 import { Testimonios } from './componentes/paginas/Testimonios';
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
   {
     path: "/Productos",
     element: <Productos />,
+    errorElement: <p>Hay un error</p>,
+  },
+  {
+    path: "/Menu",
+    element: <Menu />,
     errorElement: <p>Hay un error</p>,
   },
   {

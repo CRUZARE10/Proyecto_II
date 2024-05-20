@@ -2,42 +2,101 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    padding: 1%;
+    margin: 3% 4%;
 }
 
 .producto-salud {
+    display: grid;
+    grid-template-areas: 
+    'name price'   
+    'image image'   
+    'description description'
+    'ingredients ingredients'
+    'benefits benefits'
+    'presentation presentation'
+    'use use'
+    'precautions precautions'
+    'comprar comprar';
+    gap: 1%;
     background-color: #ccbce8;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.producto-salud-imagen {
+.name {
+    grid-area: name;
+    font-size: 1em;
+    color: rgb(218, 16, 225);
+    text-align: center;
+}
+
+.price {
+    grid-area: price;
+    font-size: 1em;
+    font-weight: 700;
+    color: rgb(218, 16, 225);
+    text-align: center;
+}
+
+.image {
+    grid-area: image;
+    width: 50%;
+    height: 95%;
+    margin: 0 auto;
+}
+
+.description {
+    grid-area: description;
+    font-size: .6em;
+    color: rgb(44, 4, 115);
+    text-align: center;
+}
+
+.ingredients {
+    grid-area: ingredients;
+    font-size: .6em;
+    color: rgb(44, 4, 115);
+}
+
+
+.benefits {
+    grid-area: benefits;
+    font-size: .7em;
+    color: rgb(44, 4, 115);
+}
+
+.presentation {
+    grid-area: presentation;
+    border: 1px solid blue;
+    background-color: grey;
+    text-align: center;
+}
+
+.use {
+    grid-area: use;
+    border: 1px solid blue;
+    background-color: grey;
+    text-align: center;
+}
+
+.precautions {
+    grid-area: precautions;
+    border: 1px solid blue;
+    background-color: grey;
+    text-align: center;
+}
+.compra {
+    color: rgb(56, 1, 58);
+    border-radius: 10px;
+    padding: 1%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: rgb(218, 16, 225);
+    border: none;
+    text-align: center;
     width: 100%;
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.producto-descripcion {
-    margin-bottom: 10px;
-}
-
-.producto-caracteristicas {
-    margin-top: 20px;
-}
-
-.producto-seccion-titulo {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.producto-ingredientes,
-.producto-presentacion,
-.producto-uso,
-.producto-precauciones {
-    margin-bottom: 10px;
-}
-
-.producto-beneficios {
-    padding-left: 20px;
 }

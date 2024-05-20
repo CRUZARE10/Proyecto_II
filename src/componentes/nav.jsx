@@ -12,6 +12,9 @@ export const Nav = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav mx-auto">
+      <li className="nav-item">
+          <Link className="nav-link" to="/Menu">Menú</Link>
+        </li>
         <li className="nav-item">
           <Link className="nav-link" to="/Productos">Productos</Link>
         </li>
